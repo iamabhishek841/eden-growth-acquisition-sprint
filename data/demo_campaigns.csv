@@ -1,0 +1,10 @@
+campaign,channel,objective,spend,impressions,clicks,leads,customers,revenue,repeat_customers
+DEMO | Deep Tissue Search,Google Search,Acquire high-intent bookings,420,9800,620,92,28,3500,7
+DEMO | Pregnancy Search,Google Search,Acquire high-intent bookings,260,5200,330,48,14,1960,4
+DEMO | Signature Packages,Meta Paid Social,Generate package purchases,360,28000,720,74,18,3510,3
+DEMO | Stress Relief Creative,Meta Paid Social,Generate first-time bookings,300,24000,540,51,11,1210,2
+DEMO | Deep Tissue Organic,Organic Search,Capture non-paid high intent,0,15000,1300,120,38,4750,12
+DEMO | Pregnancy Guide,Organic Search,Create search-led demand,0,12000,980,76,16,2240,5
+DEMO | Bring-a-Friend Referral,Referral,Acquire referred customers,120,600,160,42,24,3000,9
+DEMO | Local Fitness Partnership,Partnership,Acquire partner-referred customers,180,2500,210,35,15,1875,6
+DEMO | Lapsed Customer Winback,Email / CRM,Reactivate previous customers,40,1400,310,85,32,4000,24
