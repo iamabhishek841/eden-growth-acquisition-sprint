@@ -42,6 +42,7 @@ The project brings those areas into one measurable workflow rather than treating
 | **Growth command centre** | What did we spend, what converted, and what deserves action now? |
 | **Acquisition channels** | Which channels produce customers at acceptable downstream economics? |
 | **Experiment studio** | Can one audience/message/landing hypothesis be turned into a measurable test? |
+| **Measurement plan** | Which events and KPI definitions make the journey observable end to end? |
 | **Conversion & A/B testing** | Did the variant actually improve the conversion rate, and by how much? |
 | **SEO & content** | Which search intents are closest to a commercial customer action? |
 | **CRM & retention** | What should happen after the first booking to support repeat behaviour? |
@@ -89,6 +90,23 @@ For synthetic/demo paid campaigns, the project applies explicit rules:
 - **MEASURE** — organic/no-spend activity where paid-media ROAS is not meaningful.
 
 The defaults are deliberately inspectable in `src/growth.py`. They are **not** claimed to be Eden's real business thresholds. A production version should set thresholds from gross margin, capacity, cash flow, repeat behaviour and strategic constraints.
+
+## Measurement plan
+
+Before scaling a channel, the project defines a proposed event chain:
+
+```text
+landing_view
+→ service_cta_click
+→ booking_start
+→ booking_complete
+→ appointment_complete
+→ repeat_booking
+```
+
+Referral and partnership flows add a `referral_booking` event. The detailed implementation checklist, UTM example, reconciliation principle and data-quality checks are in `docs/measurement_spec.md`.
+
+This is a **proposed** taxonomy, not a claim about Eden's current analytics setup.
 
 ## Experiment design
 
@@ -246,6 +264,8 @@ eden-growth-acquisition-sprint/
 │   └── test_growth.py
 ├── assets/
 │   └── architecture.svg
+├── docs/
+│   └── measurement_spec.md
 ├── .streamlit/
 │   └── config.toml
 ├── .github/
