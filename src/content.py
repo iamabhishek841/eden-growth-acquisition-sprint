@@ -314,3 +314,28 @@ PAID_MEDIA_PLAYBOOKS = {
         "measurement": "Creative → landing visit → booking/purchase → customer CAC/ROAS → repeat behaviour.",
     },
 }
+
+
+SOCIAL_CONTENT_PLAYS = [
+    {
+        "play": "Treatment-expectation short video",
+        "audience_need": "Reduce uncertainty before a first visit",
+        "format": "15–25 sec short-form video: what to expect → proof/reassurance → one booking CTA",
+        "primary_metric": "Qualified landing visits / booking starts",
+        "decision": "Repeat only if downstream booking intent improves, not just views.",
+    },
+    {
+        "play": "Signature package / gifting story",
+        "audience_need": "Make the experience and value easy to understand",
+        "format": "Experience-led reel/carousel → package page",
+        "primary_metric": "Package-page visits → purchase / booking",
+        "decision": "Keep the creative angle only if it produces commercial intent.",
+    },
+    {
+        "play": "Search-led expert Q&A",
+        "audience_need": "Answer a high-intent customer question in plain language",
+        "format": "Short answer → relevant service page → booking CTA",
+        "primary_metric": "Organic landing sessions → completed bookings",
+        "decision": "Turn repeated winning questions into SEO + social content clusters.",
+    },
+]
