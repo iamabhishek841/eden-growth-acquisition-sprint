@@ -9,7 +9,9 @@ import streamlit as st
 from src.content import (
     ACQUISITION_HYPOTHESES,
     CAMPAIGN_BLUEPRINTS,
+    KPI_GLOSSARY,
     LIFECYCLE_STAGES,
+    MEASUREMENT_PLAN,
     PARTNERSHIP_HYPOTHESES,
     PUBLIC_CONTEXT,
     SEO_OPPORTUNITIES,
@@ -194,6 +196,7 @@ page = st.sidebar.radio(
         "Growth command centre",
         "Acquisition channels",
         "Experiment studio",
+        "Measurement plan",
         "Conversion & A/B testing",
         "SEO & content",
         "CRM & retention",
@@ -486,6 +489,69 @@ elif page == "Experiment studio":
         st.info(
             "No paid-media ROAS decision applies. Continue measuring downstream customer outcomes."
         )
+
+
+elif page == "Measurement plan":
+    st.subheader("Measurement plan")
+    st.caption(
+        "Before scaling any channel, make the customer journey observable from source "
+        "through booking and repeat behaviour."
+    )
+
+    st.markdown("### Proposed event taxonomy")
+    st.dataframe(
+        pd.DataFrame(MEASUREMENT_PLAN),
+        use_container_width=True,
+        hide_index=True,
+    )
+
+    st.markdown("### KPI definitions")
+    st.dataframe(
+        pd.DataFrame(KPI_GLOSSARY),
+        use_container_width=True,
+        hide_index=True,
+    )
+
+    st.markdown("### Minimum attribution discipline")
+    t1, t2, t3 = st.columns(3)
+    t1.markdown(
+        """
+        <div class="mini-card">
+        <div class="eyebrow">Source</div>
+        <h4>Consistent campaign naming</h4>
+        Use UTM source, medium and campaign names that stay stable across the ad,
+        landing page, analytics and reporting layer.
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+    t2.markdown(
+        """
+        <div class="mini-card">
+        <div class="eyebrow">Outcome</div>
+        <h4>Track the booking, not only the click</h4>
+        Connect booking starts, completed bookings and revenue back to the
+        acquisition source wherever the platform setup permits.
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+    t3.markdown(
+        """
+        <div class="mini-card">
+        <div class="eyebrow">Quality</div>
+        <h4>Feed retention back upstream</h4>
+        Compare sources on cancellations, attended appointments and repeat
+        behaviour so cheap acquisition does not hide low-quality customers.
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    st.info(
+        "This is a proposed measurement design, not a claim about Eden's current "
+        "analytics implementation."
+    )
 
 
 elif page == "Conversion & A/B testing":
