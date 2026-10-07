@@ -669,12 +669,12 @@ elif page == "30-day sprint":
     for item in SPRINT_PLAN:
         st.markdown(f"### {item['week']}")
         cols = st.columns([1, 2, 1.25])
-        cols[0].markdown(f"**Goal**  
-{item['goal']}")
-        cols[1].markdown(f"**Actions**  
-{item['actions']}")
-        cols[2].markdown(f"**Decision**  
-{item['decision']}")
+        cols[0].markdown("**Goal**")
+        cols[0].write(item["goal"])
+        cols[1].markdown("**Actions**")
+        cols[1].write(item["actions"])
+        cols[2].markdown("**Decision**")
+        cols[2].write(item["decision"])
         st.divider()
 
     st.markdown("### End-of-month founder scorecard")
