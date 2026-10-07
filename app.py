@@ -494,12 +494,12 @@ elif page == "Conversion & retention":
 
         st.markdown("#### What gets tested on the page?")
         x1, x2, x3 = st.columns(3)
-        x1.markdown("**Message match**  
-Does the page immediately match the ad/search intent?")
-        x2.markdown("**Trust / uncertainty**  
-Does the visitor have enough information to take the next step?")
-        x3.markdown("**Primary CTA**  
-Is there one obvious booking action without unnecessary friction?")
+        x1.markdown("**Message match**")
+        x1.write("Does the page immediately match the ad/search intent?")
+        x2.markdown("**Trust / uncertainty**")
+        x2.write("Does the visitor have enough information to take the next step?")
+        x3.markdown("**Primary CTA**")
+        x3.write("Is there one obvious booking action without unnecessary friction?")
 
     with retention_tab:
         st.markdown("#### Behaviour-based lifecycle")
