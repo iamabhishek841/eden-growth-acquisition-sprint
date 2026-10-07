@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430">
+  <rect width="1200" height="430" rx="26" fill="#F7F9F7"/>
+  <text x="60" y="58" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#17312D">Eden Growth Acquisition Sprint — operating loop</text>
+  <text x="60" y="88" font-family="Arial, sans-serif" font-size="16" fill="#58716B">Public business context + synthetic demo data → measurable growth decisions</text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="60" y="140" width="180" height="105" rx="16" fill="#FFFFFF" stroke="#BFD3CC" stroke-width="2"/>
+    <text x="150" y="176" text-anchor="middle" font-size="15" font-weight="700" fill="#1D6F64">1. HYPOTHESIS</text>
+    <text x="150" y="203" text-anchor="middle" font-size="15" fill="#17312D">Audience + offer</text>
+    <text x="150" y="225" text-anchor="middle" font-size="15" fill="#17312D">+ channel</text>
+
+    <rect x="285" y="140" width="180" height="105" rx="16" fill="#FFFFFF" stroke="#BFD3CC" stroke-width="2"/>
+    <text x="375" y="176" text-anchor="middle" font-size="15" font-weight="700" fill="#1D6F64">2. LAUNCH</text>
+    <text x="375" y="203" text-anchor="middle" font-size="15" fill="#17312D">Campaign + landing</text>
+    <text x="375" y="225" text-anchor="middle" font-size="15" fill="#17312D">+ follow-up</text>
+
+    <rect x="510" y="140" width="180" height="105" rx="16" fill="#FFFFFF" stroke="#BFD3CC" stroke-width="2"/>
+    <text x="600" y="176" text-anchor="middle" font-size="15" font-weight="700" fill="#1D6F64">3. MEASURE</text>
+    <text x="600" y="203" text-anchor="middle" font-size="15" fill="#17312D">Leads + bookings</text>
+    <text x="600" y="225" text-anchor="middle" font-size="15" fill="#17312D">+ revenue</text>
+
+    <rect x="735" y="140" width="180" height="105" rx="16" fill="#FFFFFF" stroke="#BFD3CC" stroke-width="2"/>
+    <text x="825" y="176" text-anchor="middle" font-size="15" font-weight="700" fill="#1D6F64">4. DIAGNOSE</text>
+    <text x="825" y="203" text-anchor="middle" font-size="15" fill="#17312D">CPL + CAC + ROAS</text>
+    <text x="825" y="225" text-anchor="middle" font-size="15" fill="#17312D">+ conversion quality</text>
+
+    <rect x="960" y="140" width="180" height="105" rx="16" fill="#E9F4EF" stroke="#1D6F64" stroke-width="2"/>
+    <text x="1050" y="176" text-anchor="middle" font-size="15" font-weight="700" fill="#1D6F64">5. DECIDE</text>
+    <text x="1050" y="203" text-anchor="middle" font-size="15" fill="#17312D">Scale / Iterate</text>
+    <text x="1050" y="225" text-anchor="middle" font-size="15" fill="#17312D">/ Stop / Measure</text>
+
+    <g stroke="#7FA79B" stroke-width="3" fill="none">
+      <path d="M240 192 H275"/>
+      <path d="M465 192 H500"/>
+      <path d="M690 192 H725"/>
+      <path d="M915 192 H950"/>
+    </g>
+    <g fill="#7FA79B">
+      <polygon points="275,192 265,186 265,198"/>
+      <polygon points="500,192 490,186 490,198"/>
+      <polygon points="725,192 715,186 715,198"/>
+      <polygon points="950,192 940,186 940,198"/>
+    </g>
+
+    <rect x="160" y="310" width="880" height="66" rx="14" fill="#17312D"/>
+    <text x="600" y="338" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">Operating principle</text>
+    <text x="600" y="362" text-anchor="middle" font-size="15" fill="#DDEAE6">Measure customer and commercial outcomes — not marketing activity for its own sake.</text>
+  </g>
+</svg>
