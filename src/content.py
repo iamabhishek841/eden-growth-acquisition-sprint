@@ -292,3 +292,25 @@ KPI_GLOSSARY = [
     {"kpi": "ROAS", "formula": "Attributed revenue / ad spend", "why_it_matters": "Revenue returned for paid-media spend; not profit."},
     {"kpi": "Repeat rate", "formula": "Repeat customers / customers", "why_it_matters": "Whether acquired customers come back."},
 ]
+
+
+PAID_MEDIA_PLAYBOOKS = {
+    "Google Search": {
+        "objective": "Capture existing high-intent demand and convert it into completed bookings.",
+        "structure": "Separate service-intent groups so keyword, ad copy and landing page stay aligned.",
+        "examples": "Phrase/exact-style themes such as deep tissue massage Blackrock, massage Blackrock, pregnancy massage Dublin.",
+        "exclusions": "Review irrelevant research/job/training intent and add negatives only after query evidence supports it.",
+        "creative": "Service + location + clear booking next step; avoid exaggerated therapeutic or medical promises.",
+        "landing": "Send traffic to the exact service page with treatment context, transparent pricing and one primary booking CTA.",
+        "measurement": "Search term → click → booking start → completed booking → attended appointment → repeat behaviour.",
+    },
+    "Meta Paid Social": {
+        "objective": "Create or capture consideration for packages, gifting and first-time bookings.",
+        "structure": "Test a small number of distinct creative hypotheses rather than many minor variations at once.",
+        "examples": "Experience-led package story, gift-oriented creative, treatment-expectation/reassurance creative.",
+        "exclusions": "Do not infer or target sensitive health conditions; keep audience design broad, lawful and privacy-aware.",
+        "creative": "Show the experience, value proposition and one next action; judge success on bookings/purchases rather than engagement.",
+        "landing": "Match each creative promise to the relevant package, gift or service page instead of a generic homepage.",
+        "measurement": "Creative → landing visit → booking/purchase → customer CAC/ROAS → repeat behaviour.",
+    },
+}
