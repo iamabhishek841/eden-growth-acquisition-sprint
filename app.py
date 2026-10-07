@@ -12,6 +12,7 @@ from src.content import (
     KPI_GLOSSARY,
     LIFECYCLE_STAGES,
     MEASUREMENT_PLAN,
+    PAID_MEDIA_PLAYBOOKS,
     PARTNERSHIP_HYPOTHESES,
     PUBLIC_CONTEXT,
     SEO_OPPORTUNITIES,
@@ -434,6 +435,34 @@ elif page == "Experiment studio":
             Did this test acquire customers at economics worth continuing?
             """
         )
+
+    if blueprint["channel"] in PAID_MEDIA_PLAYBOOKS:
+        playbook = PAID_MEDIA_PLAYBOOKS[blueprint["channel"]]
+        with st.expander(f"{blueprint['channel']} execution playbook"):
+            st.markdown(
+                f"""
+                **Objective**  
+                {playbook['objective']}
+                
+                **Campaign structure**  
+                {playbook['structure']}
+                
+                **Example intent / creative themes**  
+                {playbook['examples']}
+                
+                **Exclusions / safety**  
+                {playbook['exclusions']}
+                
+                **Creative principle**  
+                {playbook['creative']}
+                
+                **Landing-page requirement**  
+                {playbook['landing']}
+                
+                **Measurement chain**  
+                {playbook['measurement']}
+                """
+            )
 
     st.markdown("### Enter observed test results")
     st.caption(
