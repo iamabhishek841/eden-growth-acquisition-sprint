@@ -238,3 +238,79 @@ SPRINT_PLAN = [
         "decision": "What is the next highest-value growth question?",
     },
 ]
+
+
+MEASUREMENT_PLAN = [
+    {
+        "event": "landing_view",
+        "meaning": "Customer lands on a campaign / service page",
+        "properties": "utm_source, utm_medium, utm_campaign, landing_page",
+        "decision_use": "Traffic quality and campaign-to-page alignment",
+    },
+    {
+        "event": "service_cta_click",
+        "meaning": "Customer clicks the primary booking / purchase CTA",
+        "properties": "service, page, cta_label, source",
+        "decision_use": "Landing-page intent and CTA effectiveness",
+    },
+    {
+        "event": "booking_start",
+        "meaning": "Customer begins the booking / purchase flow",
+        "properties": "service, source, campaign, new_or_returning",
+        "decision_use": "High-intent conversion and funnel drop-off",
+    },
+    {
+        "event": "booking_complete",
+        "meaning": "Appointment / purchase is completed",
+        "properties": "service, revenue, source, campaign",
+        "decision_use": "Customer acquisition, CAC and conversion",
+    },
+    {
+        "event": "appointment_complete",
+        "meaning": "Booked customer attends / completes the service",
+        "properties": "service, new_or_returning, source",
+        "decision_use": "Customer quality and cancellation / no-show guardrail",
+    },
+    {
+        "event": "repeat_booking",
+        "meaning": "Existing customer books again",
+        "properties": "days_since_last_visit, service, original_source",
+        "decision_use": "Retention and acquisition-quality feedback",
+    },
+    {
+        "event": "referral_booking",
+        "meaning": "Booking is attributed to a referral / partner code",
+        "properties": "referrer_type, partner_code, service, revenue",
+        "decision_use": "Referral / partnership CAC and customer quality",
+    },
+]
+
+KPI_GLOSSARY = [
+    {"kpi": "CPL", "formula": "Spend / leads", "why_it_matters": "Cost of generating an interested prospect."},
+    {"kpi": "Lead → customer", "formula": "Customers / leads", "why_it_matters": "Whether lead volume is turning into real customers."},
+    {"kpi": "CAC", "formula": "Spend / customers", "why_it_matters": "Acquisition economics at the customer level."},
+    {"kpi": "ROAS", "formula": "Attributed revenue / ad spend", "why_it_matters": "Revenue returned for paid-media spend; not profit."},
+    {"kpi": "Repeat rate", "formula": "Repeat customers / customers", "why_it_matters": "Whether acquired customers come back."},
+]
+
+
+PAID_MEDIA_PLAYBOOKS = {
+    "Google Search": {
+        "objective": "Capture existing high-intent demand and convert it into completed bookings.",
+        "structure": "Separate service-intent groups so keyword, ad copy and landing page stay aligned.",
+        "examples": "Phrase/exact-style themes such as deep tissue massage Blackrock, massage Blackrock, pregnancy massage Dublin.",
+        "exclusions": "Review irrelevant research/job/training intent and add negatives only after query evidence supports it.",
+        "creative": "Service + location + clear booking next step; avoid exaggerated therapeutic or medical promises.",
+        "landing": "Send traffic to the exact service page with treatment context, transparent pricing and one primary booking CTA.",
+        "measurement": "Search term → click → booking start → completed booking → attended appointment → repeat behaviour.",
+    },
+    "Meta Paid Social": {
+        "objective": "Create or capture consideration for packages, gifting and first-time bookings.",
+        "structure": "Test a small number of distinct creative hypotheses rather than many minor variations at once.",
+        "examples": "Experience-led package story, gift-oriented creative, treatment-expectation/reassurance creative.",
+        "exclusions": "Do not infer or target sensitive health conditions; keep audience design broad, lawful and privacy-aware.",
+        "creative": "Show the experience, value proposition and one next action; judge success on bookings/purchases rather than engagement.",
+        "landing": "Match each creative promise to the relevant package, gift or service page instead of a generic homepage.",
+        "measurement": "Creative → landing visit → booking/purchase → customer CAC/ROAS → repeat behaviour.",
+    },
+}
