@@ -37,21 +37,20 @@ The project brings those areas into one measurable workflow rather than treating
 
 ## App workspace
 
+The role covers many growth activities, but the app deliberately does **not** turn every job-description bullet into its own page. The recruiter-facing story is kept to four decisions:
+
 | Workspace | Business question |
 | --- | --- |
-| **Growth command centre** | What did we spend, what converted, and what deserves action now? |
-| **Acquisition channels** | Which channels produce customers at acceptable downstream economics? |
-| **Experiment studio** | Can one audience/message/landing hypothesis be turned into a measurable test? |
-| **Measurement plan** | Which events and KPI definitions make the journey observable end to end? |
-| **Conversion & A/B testing** | Did the variant actually improve the conversion rate, and by how much? |
-| **SEO & content** | Which search intents are closest to a commercial customer action? |
-| **CRM & retention** | What should happen after the first booking to support repeat behaviour? |
-| **Partnerships & referrals** | Can offline/community trust become a trackable acquisition source? |
-| **30-day sprint** | What should be measured, tested, diagnosed and reallocated in the first month? |
+| **Growth overview** | What converted, what did paid acquisition cost, and what should happen next? |
+| **Acquisition & campaigns** | Which paid, organic/social and trust-based acquisition motions should be tested? |
+| **Conversion & retention** | Can we improve the landing-to-booking journey and create repeat behaviour? |
+| **30-day sprint** | How would the first month move from baseline to tests, diagnosis and reallocation? |
+
+SEO, social growth, paid media, referrals and partnerships are grouped under acquisition. Landing-page testing, A/B testing, email/CRM and retention are grouped into the customer journey. Measurement supports every workspace rather than existing as a separate reporting page.
 
 ## Core growth metrics
 
-The command centre calculates the commercial chain rather than stopping at clicks:
+The growth overview calculates the commercial chain rather than stopping at clicks:
 
 ```text
 Spend
@@ -110,7 +109,7 @@ This is a **proposed** taxonomy, not a claim about Eden's current analytics setu
 
 ## Experiment design
 
-The Experiment Studio uses a simple operator brief:
+The paid-acquisition workflow uses a simple operator brief:
 
 ```text
 Audience
@@ -141,9 +140,9 @@ Relative uplift
 
 The output is explicitly descriptive. It does not auto-declare statistical significance. A real experiment should be sized in advance and interpreted with the test design, duration, traffic quality and guardrail metrics.
 
-## SEO and content
+## SEO, organic social and content
 
-The SEO section uses public business context to propose **intent-to-conversion** opportunities. It deliberately does not invent search volume, rankings or traffic.
+The acquisition workspace combines commercial-intent SEO with a small number of organic social content hypotheses. It deliberately does not invent search volume, rankings, traffic or social performance.
 
 Example logic:
 
@@ -209,7 +208,7 @@ The data exists so the app is interactive before any private first-party data is
 
 ### Bring your own campaign export
 
-The command-centre and channel views accept a CSV with:
+The growth overview accepts a CSV with:
 
 ```text
 campaign
