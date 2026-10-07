@@ -7,14 +7,9 @@ from streamlit.testing.v1 import AppTest
 APP_PATH = Path(__file__).resolve().parents[1] / "app.py"
 
 PAGES = [
-    "Growth command centre",
-    "Acquisition channels",
-    "Experiment studio",
-    "Measurement plan",
-    "Conversion & A/B testing",
-    "SEO & content",
-    "CRM & retention",
-    "Partnerships & referrals",
+    "Growth overview",
+    "Acquisition & campaigns",
+    "Conversion & retention",
     "30-day sprint",
 ]
 
