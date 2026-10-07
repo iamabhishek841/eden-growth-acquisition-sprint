@@ -299,8 +299,8 @@ if page == "Growth command centre":
 
     with st.expander("Public business context used in this case study"):
         for item in PUBLIC_CONTEXT:
-            st.markdown(f"- {item['observation']}  
-  Source: {item['source']}")
+            st.markdown(f"- {item['observation']}")
+            st.caption(f"Source: {item['source']}")
 
 
 elif page == "Acquisition channels":
